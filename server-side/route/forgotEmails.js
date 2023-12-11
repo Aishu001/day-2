@@ -32,7 +32,7 @@ const upload = multer({ storage: storage });
 
         to: email,
         subject: 'Reset Password Link',
-        text: `https://tiny-youtiao-0d62bd.netlify.app/user/reset_password/${user._id}/${token}`
+        text: `https://silver-cendol-02bbf6.netlify.app/user/reset_password/${user._id}/${token}`
       };
   
       const info = await transporter.sendMail(mailOptions);
